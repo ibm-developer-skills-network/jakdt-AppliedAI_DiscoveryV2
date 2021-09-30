@@ -18,9 +18,9 @@ async function queryDiscovery(  projectId,
             serviceUrl: url,
         });
         let results = await discovery.listCollections({projectId});
-        let collectionName = "Coursera";
+        let collectionName = "Coursera Courses";
         if(intent === "faq") {
-            collectionName = "help center"
+            collectionName = "Coursera Help Articles"
         }
         let collections = results.result.collections;
         let collection = collections.filter(resultVal=>{
